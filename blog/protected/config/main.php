@@ -48,7 +48,13 @@ return array(
 		),
 		*/
 		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			// 'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
+			'connectionString' => 'mysql:host=localhost;dbname=blog',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+			'tablePrefix'=>'tbl_',
 		),
 		// uncomment the following to use a MySQL database
 		/*
